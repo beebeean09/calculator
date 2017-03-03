@@ -1,8 +1,8 @@
 import React from 'react';
 
 class Calculator extends React.Component {
-  constructor(props, result, num1, num2) {
-    super(props);
+  constructor(result, num1, num2) {
+    super();
     this.state = { num1: "", num2: "", result: 0 };
 
     this.setNum1 = this.setNum1.bind(this);
