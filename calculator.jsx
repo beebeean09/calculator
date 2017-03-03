@@ -59,12 +59,15 @@ class Calculator extends React.Component {
     return (
       <div>
         <h1>My Awesome Calculator!</h1>
-
-        <ul>
-          <h2>{result}</h2>
-
-
-        </ul>
+        <h2>{result}</h2>
+        <input onChange={this.setNum1} value={num1}/>
+        <input onChange={this.setNum2} value={num2}/>
+        <button onClick={this.clear}>Clear</button>
+        <br/>
+        <button onClick={this.multiply}>*</button>
+        <button onClick={this.add}>+</button>
+        <button onClick={this.subtract}>-</button>
+        <button onClick={this.divide}>/</button>
       </div>
     );
   }
